@@ -1,0 +1,110 @@
+:root {
+    --branco-geral:     #FFFFFF;
+    --azul-geral:       #94c6f0;
+    --preto-geral:      #000000;
+    --amarelo-meliodas: #e6bd0a;
+    --roxo-meliodas:    #410569;
+    --vermelho-ban:     #be2446;
+    --amarelo-escanor:  #f89500;
+    --marrom-escanor:   #472f0a;
+    --fonte-principal: 'Bebas Neue';
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__imagem {
+    width: 100%;
+    margin: 1em 2em 0;
+}
+
+.container__descricao {
+    text-align: center;
+}
+
+.descricao__logo {
+    width: 25vh;
+}
+
+.descricao__logo:hover {
+    width: 27vh;
+    transition: 1s;
+}
+
+.descricao__titulo {
+    font-size: 10vh;
+}
+
+.descricao__texto {
+    font-size: 3vh;
+}
+
+/* Meliodas */
+
+.meliodas {
+    background-image: linear-gradient(var(--amarelo-meliodas) 90%, var(--vermelho-ban));
+}
+
+.imagem__meliodas {
+    width: 90vh;
+}
+
+.titulo__meliodas {
+    color: var(--roxo-meliodas);
+}
+
+.texto__meliodas {
+    color: var(--preto-geral);
+}
+
+/* Ban */
+
+.ban {
+    background-image: linear-gradient(var(--vermelho-ban)90%, var(--amarelo-escanor));
+}
+
+.titulo__ban {
+    color: var(--azul-geral);
+}
+
+.texto__ban {
+    color: var(--branco-geral);
+}
+
+.imagem__ban {
+    width: 60vh;
+}
+
+/*Escanor*/
+
+.escanor {
+    background-color: var(--amarelo-escanor);
+}
+
+.imagem__escanor {
+    width: 70vh;
+}
+
+.titulo__escanor {
+    color: var(--marrom-escanor);
+}
+
+.texto__escanor {
+    color: var(--branco-geral);
+}
